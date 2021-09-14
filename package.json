@@ -1,7 +1,7 @@
 {
   "name": "qrcode.react",
-  "version": "1.0.1",
-  "description": "React component to generate QR codes",
+  "version": "1.0.2",
+  "description": "React component to generate QR codes, forked from http://zpao.github.io/qrcode.react",
   "keywords": [
     "react",
     "react-component",
@@ -18,10 +18,10 @@
     "publish-docs": "gh-pages --dist=examples --src='{index.html,bundle.js}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Paul O’Shannessy <paul@oshannessy.com>",
+  "author": "fanaiwen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zpao/qrcode.react.git"
+    "url": "https://github.com/flwzz/qrcode.react"
   },
   "license": "ISC",
   "files": [

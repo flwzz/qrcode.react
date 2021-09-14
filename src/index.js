@@ -61,6 +61,7 @@ type QRProps = {
     excavate: boolean,
     x?: number,
     y?: number,
+    crossOrigin?: string,
   },
 };
 
@@ -88,6 +89,7 @@ const PROP_TYPES =
           excavate: PropTypes.bool,
           x: PropTypes.number,
           y: PropTypes.number,
+          crossOrigin: PropTypes.string,
         }),
       }
     : {};
@@ -352,6 +354,7 @@ class QRCodeCanvas extends React.PureComponent<QRProps, {imgLoaded: boolean}> {
           ref={(ref: ?HTMLImageElement): ?HTMLImageElement =>
             (this._image = ref)
           }
+          crossOrigin={imageSettings.crossOrigin}
         />
       );
     }
